@@ -1,4 +1,4 @@
-Spec::Matchers.define :allow_teams_to_enter do |expected|
+RSpec::Matchers.define :allow_teams_to_enter do |expected|
 	match do |actual|
 		begin
 			Team.new("Random name").enter_competition actual

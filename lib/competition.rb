@@ -4,6 +4,10 @@ class Competition
 	class Closed < StandardError
 	end
 
+	def initialize(questions = [])
+		@questions = questions
+	end
+	
 	def start
 		close
 	end
